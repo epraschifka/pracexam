@@ -10,7 +10,7 @@ void Airplane::reducePassengers(int x) {
     numPassengers -= x;
     if (numPassengers < 0) {numPassengers = 0;}
 }
-
+int Airplane::get_numPassengers(){return numPassengers;}
 void Airplane::fly(int headwind, int minutes) {
     int extra_fuel = numPassengers * 0.001;
 
