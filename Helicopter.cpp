@@ -1,4 +1,5 @@
 #include "Helicopter.h"
+#include <iostream>
 int Helicopter::heliID = 0;
 
 Helicopter::Helicopter() {}
@@ -21,17 +22,17 @@ void Helicopter::fly(int headwind, int minutes) {
         }
 
     if (headwind < 40) {
-        if ((get_fuel() - (0.2 * minutes) - (extra_fuel*0.01)) >= 20) 
+        if ((get_fuel() - (0.2 * minutes) - (extra_fuel*0.01*minutes)) >= 20) 
             {
-            set_fuel(get_fuel() - (0.2 * minutes) - (extra_fuel*0.01));
+            set_fuel(get_fuel() - (0.2 * minutes) - (extra_fuel*0.01*minutes));
             set_numberOfFlights(get_numberOfFlights()+1);
             }
     }
 
     if (headwind >= 40) {
-        if ((get_fuel() - (0.4 * minutes) - (extra_fuel*0.01)) >= 20) 
+        if ((get_fuel() - (0.4 * minutes) - (extra_fuel*0.01*minutes)) >= 20) 
         {
-         set_fuel(get_fuel() - (0.4 * minutes) - (extra_fuel*0.01));
+         set_fuel(get_fuel() - (0.4 * minutes) - (extra_fuel*0.01*minutes));
          set_numberOfFlights(get_numberOfFlights()+1);
         }
     }
