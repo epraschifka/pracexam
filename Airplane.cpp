@@ -24,9 +24,9 @@ void Airplane::fly(int headwind, int minutes) {
     }
 
     if (headwind >= 60) {
-        if (get_fuel() - 0.5 * minutes - extra_fuel*0.01 >= 20) 
+        if (get_fuel() - 0.5 * minutes - extra_fuel*0.01*minutes >= 20) 
         {
-         set_fuel(get_fuel() - 0.4 * minutes - extra_fuel*0.01);
+         set_fuel(get_fuel() - 0.4 * minutes - extra_fuel*0.01*minutes);
          set_numberOfFlights(get_numberOfFlights()+1);
         }
     }
