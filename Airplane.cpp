@@ -4,6 +4,7 @@ Airplane::Airplane(int w, int p) {
     set_weight(w);
     numPassengers = p; 
     numberOfFlights = 0;
+    set_fuel(100);
 }
 
 void Airplane::reducePassengers(int x) {
