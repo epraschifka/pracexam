@@ -3,6 +3,8 @@ int Helicopter::heliID = 0;
 
 Helicopter::Helicopter() {}
 Helicopter::Helicopter(int w, string n) {
+    name = n;
+    set_weight(w);
     craftID = heliID++;
     numberOfFlights = 0;
     set_fuel(100);
