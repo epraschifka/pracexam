@@ -3,9 +3,11 @@ int Helicopter::heliID = 0;
 
 Helicopter::Helicopter() {
     craftID = heliID++;
+    numberOfFlights = 0;
 }
 Helicopter::Helicopter(int w, string n) {
     craftID = heliID++;
+    numberOfFlights = 0;
 }
 
 string Helicopter::get_name() {return name;}

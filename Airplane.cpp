@@ -3,6 +3,7 @@ Airplane::Airplane(){};
 Airplane::Airplane(int w, int p) {
     set_weight(w);
     numPassengers = p; 
+    numberOfFlights = 0;
 }
 
 void Airplane::reducePassengers(int x) {

@@ -2,8 +2,8 @@ class AirCraft {
     private: 
     int weight;                // the weight of AirCraft
     float fuel;                // fuel percentage, initially 100%
-    int numberOfFlights;       // initially 0
     public:
+    int numberOfFlights;       // initially 0
     AirCraft();
     AirCraft(int w);           // creates an Aircraft with weight w
     void refuel();             // Resets fuel back to 100%
